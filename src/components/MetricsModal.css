@@ -1,0 +1,96 @@
+.metrics-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,40,0.18);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.metrics-modal-container {
+  background: #fafaf9;
+  border-radius: 12px;
+  width: 708px;
+  height: 390px;
+  min-width: 708px;
+  min-height: 390px;
+  max-width: 98vw;
+  max-height: 98vh;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 0 0 24px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gellix', 'Gellix-Regular', 'Gellix-Light', 'Gellix-LightItalic', Arial, sans-serif !important;
+}
+.metrics-modal-header {
+  background: #0a0a48;
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+  padding: 18px 32px 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.metrics-modal-title {
+  font-size: clamp(1.1rem, 2vw, 1.35rem); /* Responsive for modal title */
+  font-weight: 600;
+}
+.metrics-modal-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.metrics-modal-content {
+  padding: 32px 32px 8px 32px;
+}
+.metrics-modal-section-title {
+  font-size: clamp(1.1rem, 2vw, 1.25rem); /* Responsive: min 1.1rem, max 1.25rem */
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #222;
+  text-align: left;
+  padding-left: 2px;
+}
+.metrics-modal-section-title + .metrics-modal-table,
+.metrics-modal-section-title + div > .metrics-modal-table {
+  margin-top: 0;
+}
+.metrics-modal-section-title {
+  border-bottom: 1.5px solid #000048;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  width: 100%;
+  display: block;
+}
+.metrics-modal-table {
+  width: 90%;
+  border-collapse: collapse;
+  background: #f7f7f6;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1.08rem;
+}
+.metrics-modal-table th {
+  text-align: left;
+  color: #0a0a48;
+  font-weight: 700;
+  padding: 12px 32px 12px 32px; /* more space on both sides */
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #E8E8E6; /* updated vertical border color and thickness */
+  width: 48%;
+}
+.metrics-modal-table td {
+  color: #222;
+  padding: 12px 32px 12px 32px; /* more space on both sides */
+  border-bottom: 1px solid #e0e0e0;
+  width: 52%;
+  font-size: clamp(1rem, 1.5vw, 1.08rem); /* Responsive font size for table */
+}
+.metrics-modal-table tr:last-child th,
+.metrics-modal-table tr:last-child td {
+  border-bottom: none;
+}
